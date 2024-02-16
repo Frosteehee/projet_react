@@ -1,0 +1,43 @@
+.location {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .location-container-up-down {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .location-content-up {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .location-content-up-left {
+    flex: 1;
+  }
+  
+  .container-tags {
+    margin-top: 10px;
+  }
+  
+  .hostRating {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .host {
+    margin-right: 20px;
+  }
+  
+  .rating {
+    font-size: 18px;
+  }
+  
+  .location-content-down {
+    margin-top: 20px;
+  }
+  
