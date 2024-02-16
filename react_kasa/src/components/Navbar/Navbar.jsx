@@ -8,7 +8,7 @@ const Navbar = () => {
         <img src ={logo} alt='logo' className="logo"/>
         <ul>
         <li>
-        <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
+        <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}> {/* NavLink pour gerer les liens nav-active pour underline le lien actif*/}
          Accueil
         </NavLink>
         </li>
