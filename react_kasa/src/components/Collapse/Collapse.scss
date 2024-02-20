@@ -1,7 +1,7 @@
 .Collapsible {
  // display: none;
   transition: height 0.3s ease-in-out;
-  background-color:#FF6060;
+  //background-color:#FF6060;
  // width: 100%;
   margin-left: 20%;
   margin-right: 20%;
@@ -9,6 +9,7 @@
   margin-top: 20px;;
  font-size: 24px;
  font-family: Montserrat;
+ //color: black;
 
   &.open {
     display: block;
@@ -20,13 +21,18 @@
 .trigger-container{
   font-weight: 700;
   font-family: Montserrat;
+  background-color: red;
+  color: white;
 }
 p{
 font-weight: 600;
+color:black;
 
 }
 
-
+.Collapsible_content {
+background-color: white;
+}
 
 
 
@@ -51,8 +57,9 @@ font-weight: 600;
  color:black;
 }
 */
-.arrowCollapsed {
+.arrowCollapsedAbout {
 background-color: blue;
+
 
 
 &.onclick {

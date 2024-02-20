@@ -1,7 +1,18 @@
+/*
+@use "./components/Cards/Cards.scss";
+@use "components/Banner/Banner.scss";
+@use "components/Navbar/Navbar.scss";
+@use "components/Footer/Footer.scss";
+@use "components/Carousel/Carousel.scss";
+@use "components/Collapse/Collapse.scss";
+@use "components/RentalPage/RentalPage.scss";
+
+*/
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, Montserrat, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  margin: 0;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   font-synthesis: none;
@@ -19,10 +30,27 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
+@media screen and (max-width: 768px) {
+  /* Styles pour les appareils mobiles et les petites tablettes */
+  body {
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Styles pour les tablettes */
+  h1 {
+    font-size: 2.5em;
+  }
+}/*# sourceMappingURL=main.css.map */

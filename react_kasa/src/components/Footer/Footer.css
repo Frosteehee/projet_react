@@ -7,9 +7,15 @@ footer {
   background-color: black;
   padding-top: 66px;
   padding-bottom: 29px;
+  width: 100%;
 }
-
 footer p {
   font-size: 24px;
   font-family: Montserrat;
 }
+
+.footer-text {
+  font-weight: 700;
+  font-family: Montserrat;
+  color: white;
+}/*# sourceMappingURL=Footer.css.map */

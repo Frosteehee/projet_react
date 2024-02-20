@@ -1,0 +1,94 @@
+/* Conteneur principal pour les collapsibles */
+/*
+.collapsedRental {
+   display: flex;
+   flex-direction: column;
+  width: 100%;
+  }*/
+  /*
+
+.trigger-container__rental {
+  font-weight: 700;
+  font-size: 18px;
+  font-family: Montserrat;
+  background-color: blueviolet;
+ // width: 100%;
+  display: flex;
+  flex-direction: row;
+   flex-wrap: wrap;
+  // align-items: center;
+  justify-content: space-between;
+  padding: 10px 70px 10px 30px;
+  border-radius: 10px;
+}
+*/
+/* Style du texte de la description */
+.description, .equipment{
+   font-family: Montserrat;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 26px;
+   letter-spacing: 0em;
+   //background-color:red;
+   list-style-type: none;
+   color: black;
+  // width: 100%;
+   //padding: 10px 20px; /* Ajout de padding pour améliorer la lisibilité */
+  }
+  
+  /* Style du conteneur collapsible */
+  /*
+  .collapse-container {
+   transition: height 0.3s ease-in-out;
+   overflow: hidden; /* Pour cacher le contenu dépassant de la taille du conteneur */
+   //width: 100%;
+  //}
+  
+  /* Style de la flèche *//*
+  .arrowCollapsed {
+   background-color: blue;
+  }*/
+  
+
+
+  /* CollapseRental.scss */
+
+/* Style du libellé du trigger */
+.trigger-container__rental {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 350px 10px 10px; /* Augmenter le padding pour élargir le conteneur */
+  font-weight: 700;
+  font-size: 18px;
+  font-family: Montserrat;
+  background-color: blueviolet;
+  border-radius: 10px;
+  //width: 100%;
+  cursor: pointer; /* Ajout d'un curseur pointer pour indiquer l'interactivité */
+  position: relative; /* Permet de positionner la flèche par rapport à ce conteneur */
+}
+
+/* Style de la flèche */
+.arrowCollapsed {
+  background-color: blue;
+  position: absolute; /* Permet de positionner la flèche de façon absolue */
+  right: 10px; /* Place la flèche à 10px de la droite du conteneur */
+    /* Style de la flèche lorsqu'elle est cliquée */
+    .arrowCollapsed.onclick {
+      transform: rotate(-180deg);
+     }
+}
+/* CollapseRental.scss */
+
+/* Conteneur principal */
+.collapsedRental {
+  display: flex; /* Utilisation de flexbox pour placer les éléments côte à côte */
+ // flex-wrap: wrap; /* Permet de passer à la ligne si l'espace est insuffisant */
+flex-direction: row;
+margin-right: 250px;;
+//width: 100%;
+}
+
+
+

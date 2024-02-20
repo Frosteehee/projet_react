@@ -1,43 +1,125 @@
-.location {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
+/* RentalPages.scss */
+
+.rental-page {
+   // max-width: 800px;
+    //margin: 0 auto;
+    //padding-left: 20px;
+    //padding-right: 20px;
+    //height: 100%;
+    margin:25px;
+  }
+  h2{
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#FF6060 ;
+    margin-top:-10px;
+    
+  }
+   h3{
+    font-family: Montserrat;
+font-size: 18px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: left;
+
+    color:black;
+  }
+
+  .host_name{
+    font-family: Montserrat;
+font-size: 18px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: right;
+color:#FF6060 ;
+  }
+  .loc {
+    margin-top: 20px;
+  }
+  
+  .loc-container-up-down {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 20px;
+  }
+  
+  .loc-content-up,
+  .loc-content-down {
+    width: 48%;
+  }
+  
+  .loc-content-up-left {
     margin-bottom: 20px;
   }
   
-  .location-container-up-down {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .location-content-up {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .location-content-up-left {
-    flex: 1;
+  .loc-content-up h2,
+  .loc-content-down h4 {
+    margin-bottom: 10px;
+    
   }
   
   .container-tags {
-    margin-top: 10px;
+    margin-bottom: 10px;
   }
   
-  .hostRating {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
+  .container-tags span {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color:#FF6060 ;
+    border-radius: 5px;
+    font-size: 0.8rem;
   }
   
   .host {
-    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
   }
   
+  .host img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  /*
   .rating {
-    font-size: 18px;
+    font-size: 0.9rem;
+    color: black;
+  }*/
+  .star-icon {
+    color: gray;
   }
   
-  .location-content-down {
+  .star-icon.active {
+    color:#FF6060 ;
+  }
+  
+  
+  .loc-content-down h4 {
     margin-top: 20px;
+  }
+  
+  .loc-content-down p {
+    margin-bottom: 20px;
+   // padding-right: 250px;;
+  }
+  
+  .loc-content-down ul {
+    list-style-type: none;
+   // padding: 0;
+  }
+  
+  .loc-content-down li {
+    margin-bottom: 10px;
+  //padding-right: 250px; ;
   }
   

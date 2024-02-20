@@ -1,70 +1,42 @@
 import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import locationsData from "../../data/locations.json";
-//import TagsComponent from "./Tags";
-import CollapsisComponent from "../Collapse/Collapse";
-//import RatingComponent from "./Rating";
-import CarouselComponent from "../Carousel/Carousel";
-import "./RentalPage.scss"
+import locations from "../../data/locations.json";
+import CustomCarousel from "../../components/Carousel/Carousel";
+import CollapseRental from "../../components/Collapse/CollapseRental";
+import "./RentalPage.scss";
+import { FaStar } from 'react-icons/fa';
 
-const LocationComponent = () => {
+const RentalPages = () => {
   const { id } = useParams();
-  const navigator = useNavigate();
-  const locationData = getLocationData(id);
+  const navigate = useNavigate();
+  const location = locations.find(item => item.id === id);
 
-  useEffect(() => {
-    if (!locationData) {
-      navigator("/error");
-    }
-  }, [id, locationData, navigator]);
+  useEffect(() => { if (!location) navigate("/error"); }, [id, location, navigate]);
 
-  if (!locationData) {
-    return null;
-  }
-
-  return (
-    <>
-      <div className="location">
-        <CarouselComponent slides={locationData.pictures}/>
-        <div className="location-container-up-down">
-          <div className="location-content-up">
-            <div className="location-content-up-left">
-              <h2>{locationData.title}</h2>
-              <h3>{locationData.location}</h3>
-              <div className="container-tags">
-               {/*} {locationData.tags.map((tag, index) => (
-                 <TagsComponent key={index} text={tag} />
-               ))}*/}
-              </div>
-            </div>
-            <div className="hostRating">
-              <div className="host">
-                <h3>{locationData.host.name}</h3>
-                <img src={locationData.host.picture} alt={locationData.title} />
-              </div>
-              <div className="rating">
-               {/* <RatingComponent rating={parseInt(locationData.rating, 10)} />*/}
-              </div>
-            </div>
+  return location ? (
+    <div className="rental-page">
+      <CustomCarousel rentalId={id} />
+      <div className="loc-container-up-down">
+        <div className="loc-content-up">
+          <h2>{location.title}</h2>
+          <h3>{location.location}</h3>
+          <div className="container-tags">{location.tags.map((tag, index) => <span key={index}>{tag}</span>)}</div>
+        </div>
+        <div className="hostRating">
+          <div className="host">
+            <h3 className="host_name">{location.host.name}</h3>
+            <img src={location.host.picture} alt={location.host.name} />
           </div>
-          <div className="location-content-down">
-            <CollapsisComponent title="Description">{locationData.description}</CollapsisComponent>
-            <CollapsisComponent title="Equipement">
-              <ul>
-                {locationData.equipments.map((equip, index) => (
-                  <li key={index}>{equip}</li>
-                ))}
-              </ul>
-            </CollapsisComponent>
+          <div className="rating">
+            {Array.from({ length: 5 }, (_, index) => (
+              <FaStar key={index} className={index < parseInt(location.rating) ? "star-icon active" : "star-icon"} />
+            ))}
           </div>
         </div>
       </div>
-    </>
-  );
+      <div className="loc-content-down"><CollapseRental description={location.description} equipments={location.equipments} /></div>
+    </div>
+  ) : null;
 };
 
-const getLocationData = (id) => {
-  return locationsData.find((item) => item.id === id);
-};
-
-export default LocationComponent;
+export default RentalPages;
