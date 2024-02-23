@@ -9,6 +9,7 @@ footer {
     padding-bottom: 29px;
     width: 100%;
 
+
     p {
         font-size: 24px;
         font-family: Montserrat; // installer font
@@ -19,4 +20,17 @@ footer {
     font-weight: 700;
     font-family: Montserrat;
     color: white;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////
+@media screen and (max-width: 768px){
+footer {
+    padding-bottom: 40px;
+    p {
+        font-size: 18px;
+    }
+}
+    
 }

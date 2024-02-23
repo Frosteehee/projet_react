@@ -23,3 +23,21 @@ const Navbar = () => {
 }
 
 export default Navbar;
+
+
+
+/** 
+ * Commentaires du code :
+ * 
+Import des ressources -> Importe les styles SCSS, le composant NavLink de react-router-dom, et le logo de l'application.
+Composant Navbar-> composant fonctionnel qui retourne le JSX représentant la barre de navigation.
+Barre de navigation ->Comprend un élément <nav> englobant tout.
+Affiche le logo de l'application.
+Contient une liste non ordonnée <ul> avec des éléments de liste <li>.
+
+Liens de navigation -> Utilise NavLink pour créer des liens vers différentes pages de l'application.
+Applique la classe "nav-active" si le lien est actif.
+Export du composant -> Rend le composant Navbar disponible pour être utilisé dans d'autres parties de l'application.
+*
+*
+**/

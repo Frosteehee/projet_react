@@ -9,6 +9,7 @@ footer {
   padding-bottom: 29px;
   width: 100%;
 }
+
 footer p {
   font-size: 24px;
   font-family: Montserrat;
@@ -18,4 +19,13 @@ footer p {
   font-weight: 700;
   font-family: Montserrat;
   color: white;
-}/*# sourceMappingURL=Footer.css.map */
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding-bottom: 40px;
+  }
+  footer p {
+    font-size: 18px;
+  }
+}
