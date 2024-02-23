@@ -41,8 +41,8 @@ h3 {
 .loc-container-up-down {
   display: flex;
   justify-content: space-between;
-  margin-left: 45px;
-  margin-right: 45px;
+  margin-left: 60px;
+  margin-right: 60px;
   margin-top: 20px;
 }
 
@@ -86,10 +86,10 @@ h3 {
 }
 
 /*
-.rating {
-  font-size: 0.9rem;
-  color: black;
-}*/
+  .rating {
+    font-size: 0.9rem;
+    color: black;
+  }*/
 .star-icon {
   color: gray;
 }
@@ -112,4 +112,4 @@ h3 {
 
 .loc-content-down li {
   margin-bottom: 10px;
-}/*# sourceMappingURL=RentalPage.css.map */
+}

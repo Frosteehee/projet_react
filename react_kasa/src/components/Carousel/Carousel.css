@@ -1,27 +1,53 @@
-@charset "UTF-8";
-.image-counter {
-  position: absolute;
-  bottom: 20%;
-  left: 50%;
-  background-color: rgba(255, 255, 255, 0.7);
-  color: red;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 17px;
+.custom-carousel {
+  position: relative;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
-.carousel-img {
-  width: 100%; /* Pour assurer que l'image remplit complètement le conteneur du carousel */
-  height: auto; /* Pour maintenir le ratio d'aspect de l'image */
-  border-radius: 5px; /* Pour ajouter des coins arrondis à l'image si nécessaire */
-  -o-object-fit: cover;
-     object-fit: cover;
+.custom-carousel button {
+  /* position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    color: red;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+*/
+}
+
+.custom-carousel button .angleLeft {
+  left: 10px;
+}
+
+.custom-carousel button .angleRight {
+  right: 150px;
+}
+
+.custom-carousel .image-counter {
+  /*  position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    color: green;
+    padding: 5px 10px;
+    border-radius: 5px;
+   */
+  font-size: 80px;
+}
+
+.custom-carousel .currentIndex {
+  color: red;
+}
+
+.custom-carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
   height: 415px;
   top: 163px;
   left: 100px;
 }
-
-.custom-carousel {
-  margin-left: 60px;
-  margin-right: 60px;
-}/*# sourceMappingURL=Carousel.css.map */
