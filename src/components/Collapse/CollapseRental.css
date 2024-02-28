@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* Conteneur principal pour les collapsibles */
+/* Style du texte de la description */
+.description, .equipment {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  list-style-type: none;
+  color: black;
+}
+
+/* Style du libellé du trigger */
+.trigger-container__rental {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 400px 10px 10px; /* Augmenter le padding pour élargir le conteneur */
+  font-weight: 700;
+  font-size: 18px;
+  font-family: Montserrat;
+  background-color: #FF6060;
+  border-radius: 10px;
+  cursor: pointer; /* Ajout d'un curseur pointer pour indiquer l'interactivité */
+  position: relative; /* Permet de positionner la flèche par rapport à ce conteneur */
+  /* Style de la flèche */
+}
+.trigger-container__rental .arrowCollapsed {
+  transition: transform 0.4s ease;
+  position: absolute;
+  right: 10px;
+}
+.trigger-container__rental .arrowCollapsed.onclick {
+  transform: rotate(-180deg);
+}
+
+/* Conteneur principal */
+.collapsedRental {
+  display: flex;
+  margin-right: 250px;
+  background-color: rgba(246, 246, 246, 0.4509803922);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .trigger-container__rental {
+    width: 30%;
+    padding: 10px 200px 10px 10px; /* Augmenter le padding pour élargir le conteneur */
+    background-color: aqua;
+  }
+  .loc-content-down ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .trigger-container__rental {
+    padding: 10px 320px 10px 10px; /* Augmenter le padding pour élargir le conteneur */
+    background-color: yellow;
+    margin-left: -20px;
+  }
+  .collapsedRental {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=CollapseRental.css.map */

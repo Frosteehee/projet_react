@@ -1,0 +1,39 @@
+.errorPage {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin: 113px 0px;
+}
+.errorPage .errorText {
+  display: flex;
+  width: 396px;
+  height: 198px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.errorPage .errorText h1 {
+  color: red;
+  text-align: center;
+  font-size: 192px;
+  font-weight: 700;
+  margin: 0;
+}
+.errorPage p {
+  color: red;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  margin: 0;
+  text-align: center;
+}
+.errorPage .link {
+  color: red;
+  font-size: 28px;
+  font-weight: 700;
+  text-decoration-line: underline;
+}/*# sourceMappingURL=Error.css.map */
