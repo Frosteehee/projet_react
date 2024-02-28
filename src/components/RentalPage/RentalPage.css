@@ -1,0 +1,132 @@
+/* RentalPages.scss */
+.rental-page {
+  margin: 25px;
+}
+
+h2 {
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FF6060;
+  margin-top: -10px;
+}
+
+h3 {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: black;
+}
+
+.host_name {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #FF6060;
+}
+
+.loc-container-up-down {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 20px;
+}
+
+.loc-content-up,
+.loc-content-down {
+  width: 48%;
+}
+
+.loc-content-up h2,
+.loc-content-down h4 {
+  margin-bottom: 10px;
+}
+
+.container-tags {
+  margin-bottom: 10px;
+}
+
+.container-tags span {
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #FF6060;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.host {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.host img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.star-icon {
+  color: gray;
+}
+
+.star-icon.active {
+  color: #FF6060;
+}
+
+.loc-content-down {
+  margin-left: 20px;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .loc-content-down {
+    margin-left: 45px;
+  }
+}
+
+.loc-content-down h4 {
+  margin-top: 20px;
+}
+
+.loc-content-down p {
+  margin-bottom: 20px;
+}
+
+.loc-content-down ul {
+  list-style-type: none;
+}
+
+.loc-content-down li {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .loc-content-down ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .loc-container-up-down {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .loc-container-up-down ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}/*# sourceMappingURL=RentalPage.css.map */
